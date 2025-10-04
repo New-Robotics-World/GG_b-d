@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Dhanalakshmi (GG)! 🎂</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="wish-container">
+            <div class="wish-card" id="wishCard">
+                <div class="wish-image-container">
+                    <img class="wish-image" id="wishImage" src="images/img1.jpg" alt="Happy Birthday Dhanalakshmi (GG)!">
+                </div>
+                <div class="wish-content">
+                    <h1 class="wish-title">Happy Birthday Dhanalakshmi!</h1>
+                    <h2 class="wish-subtitle">Dear GG 🎂✨</h2>
+                    <p class="wish-text" id="wishText">Click anywhere to see the next wish!</p>
+                    <div class="wish-number">
+                        <span id="currentWish">1</span> / <span id="totalWishes">5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="prev-btn" id="prevBtn">← Previous</button>
+            <button class="next-btn" id="nextBtn">Next →</button>
+        </div>
+        
+        <div class="instructions">
+            <p>Click anywhere on the screen or use the buttons to navigate through wishes</p>
+            <p>Click on the image to view it in fullscreen</p>
+            <button class="help-btn" id="helpBtn">❓ Help</button>
+        </div>
+    </div>
+    
+    <!-- Instructions Modal -->
+    <div class="instructions-modal" id="instructionsModal">
+        <div class="instructions-content">
+            <div class="instructions-header">
+                <h2>🎉 Welcome to Dhanam's Birthday Wishes! 🎂</h2>
+                <span class="close-instructions-btn" id="closeInstructionsBtn">&times;</span>
+            </div>
+            <div class="instructions-body" id="instructionsBody">
+                <!-- Instructions will be dynamically inserted here -->
+            </div>
+            <div class="instructions-footer">
+                <button class="start-btn" id="startBtn">Start Exploring! 🚀</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fullscreen Image Modal -->
+    <div class="fullscreen-modal" id="fullscreenModal">
+        <div class="fullscreen-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <img class="fullscreen-image" id="fullscreenImage" src="" alt="Fullscreen Image">
+            <div class="image-caption" id="imageCaption"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
